@@ -8,6 +8,16 @@
     <body>
         <form action="" method="get">
             <fieldset>
+                <legend>FORMAT DE LA BROCHURE</legend>
+                <button name="btnImprime" value="Imprime">
+                    <img src="images/icon-file-print.svg" alt="Imprime">Imprimé
+                <button name="btnPDF" value="PDF">
+                    <img src="images/icon-file-pdf.svg" alt="PDF">PDF
+                <button name="btnePub" value="ePub">
+                    <img src="images/icon-file-epub.svg" alt="ePub">ePub
+            </fieldset>
+
+            <fieldset>
                 <legend>INFORMATION DE CONTACT</legend>
                 <div>
                     <label for="prenom">Prénom</label>
@@ -34,15 +44,43 @@
                     <input name="adresse" id="adresse" type="text">
                 </div>
                 <div>
+                    <legend>pays</legend>
                     <select name="pays" id="pays">
-                        <optgroup>
-                            
+                        <option value="">-Sélectionner-</option>
+                        <option value="Canada">Canada</option>
+                        <option value="États-Unis">États-Unis</option>
+                    </select>
+                </div>
+                <div>
+                  <legend>Province ou État</legend>
+                    <select name="Province_État" id="Province_État">
+                        <optgroup label="Canada">
+                            <option value="">-Sélectionner-</option>
+                            <option value="QC">Québec</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">Colombie-Britannique</option>
+                            <option value="PE">Île-du-prince-Édouard</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">Nouveau-Brunswick</option>
+                            <option value="NS">Nouvelle-Écosse</option>
+                            <option value="ON">Ontario</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="NL">Terre-Neuve-et-Labrador</option>
+                        </optgroup>
+                        <optgroup label="États-Unis">
+                            <option value="CA">Californie</option>
+                            <option value="NY">New York</option>
                         </optgroup>
                     </select>
+                </div>
+                <div>
+                    <label for="code_postal">Code postal</label>
+                    <input name="code_postal" id="code_postal" type="text">
                 </div>
             </fieldset>
 
             <button name="btnCommander" value="Commander">
+                Commander
                 <img src="images/icon-arrow.svg" alt="Commander">
             </button>
         </form>
