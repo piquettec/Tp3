@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /**
- * @author X <X@csfoy.ca>
+ * @author Charles Piquette <2535791@csfoy.ca>
  *
  * TABLE DES MATIERES
  *
@@ -100,4 +100,40 @@ img {
 }
 .icone--erreur {
     background-position: 99px 0;
+}
+
+.radio_button {
+    display: inline-block;
+    border-radius: 1rem;
+    background: blue;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+input[type=radio] + label{
+    border: 2px solid white;
+}
+
+input:checked + label{
+    border: 2px solid orange;
+    outline: 4px solid rgb(255, 223, 159);
+}
+
+.message__erreur{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 57px auto;
+    background-position: -38px 0;
+    padding-left: 24px;
+}
+
+.icon__section {
+    background-color: color-mix(in oklab, rgb(236, 78, 236) 50%, rgb(57, 148, 245) 50%);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
