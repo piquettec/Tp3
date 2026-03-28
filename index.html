@@ -5,36 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Commander une brochure gratuite</title>
     </head>
-    <header>
-        <h2>PUBLICATION GRATUITE</h2>
-        <h1>Commander une <em>brochure</em> gratuite</h1>
-    </header>
     <body>
+        <header>
+            <h2>PUBLICATION GRATUITE</h2>
+            <h1>Commander une <em>brochure</em> gratuite</h1>
+        </header>
         <form action="URL" method="get">
             <fieldset name="format_brochure">
                 <legend>FORMAT DE LA BROCHURE</legend>
                 <img class="icon__section" src="images/icon-format-brochure.svg" alt="icon format brochure">
                 <ul class="choix_format">
                     <li>
-                        <input class="screen-reader-only" type="radio" name="choix_imprime" id="choix_imprime" >
+                        <input class="screen-reader-only" type="radio" name="choix_format" id="choix_imprime" >
                         <label class="radio_button" for="choix_imprime">
-                            <img src="images/icon-file-print.svg" alt="Imprime">
+                            <img src="images/icon-file-print.svg" alt="">
                             <span class="libele__imprime">Imprimé</span>
                         </label>
                     </li>
                     
                     <li>
-                        <input class="screen-reader-only" type="radio" name="choix_PDF" id="choix_PDF" >
+                        <input class="screen-reader-only" type="radio" name="choix_format" id="choix_PDF" >
                         <label class="radio_button" for="choix_PDF">
-                            <img src="images/icon-file-pdf.svg" alt="PDF">
+                            <img src="images/icon-file-pdf.svg" alt="">
                             <span class="libele__imprime">PDF</span>
                         </label>
                     </li>
 
                     <li>
-                        <input class="screen-reader-only" type="radio" name="choix_ePub" id="choix_ePub" >
+                        <input class="screen-reader-only" type="radio" name="choix_format" id="choix_ePub" >
                         <label class="radio_button" for="choix_ePub">
-                            <img src="images/icon-file-epub.svg" alt="ePub">
+                            <img src="images/icon-file-epub.svg" alt="">
                             <span class="libele__imprime">ePub</span>
                         </label>
                     </li>
@@ -70,15 +70,15 @@
                     <label for="adresse">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
                     <input name="adresse" id="adresse" type="text">
                 </div>
-                <fieldset>
+                <div>
                     <legend>pays</legend>
                     <select name="pays" id="pays">
                         <option value="">-- Sélectionner --</option>
                         <option value="Canada">Canada</option>
                         <option value="États-Unis">États-Unis</option>
                     </select>
-                </fieldset>
-                <fieldset>
+                </div>
+                <div>
                     <legend>Province ou État</legend>
                     <select name="Province_État" id="Province_État">
                         <option value="">-- Sélectionner --</option>
@@ -101,7 +101,7 @@
                             <option value="NY">New York</option>
                         </optgroup>
                     </select>
-                </fieldset>
+                </div>
                 <div>
                     <label for="code_postal">Code postal <span class="exemple__formulaire">(A1A 1A1)</span></label>
                     <input name="code_postal" id="code_postal" type="text">
