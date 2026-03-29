@@ -99,6 +99,10 @@ img {
     width: auto;
 }
 
+.exemple__formulaire{
+    color: rgb(120, 120, 120);
+}
+
 /* ------- Validations ------- */
 body {
     display: flex;
@@ -193,10 +197,17 @@ input:checked + label{
 
 
 /* ----- information de contact ----- */
+/* stylisation des liste à dérouler */
+.information_contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-.champ_texte-contact {
+.champ_texte-contact,
+.selection_postal {
     display: block;
-    width: 20em;
+    width: 25em;
     height: 2em;
     background: #f6f1ed;
     border-radius: 5px;
@@ -207,24 +218,28 @@ input[type=tel],
 input[type=email],
 .champ_texte-postal {
     display: block;
-    width: 41em;
+    width: 51em;
     height: 2em;
     background: #f6f1ed;
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
 }
 
-.information_contact {
+.libele {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 .titre_libele {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
-.libele {
-    padding-left: 1em;
-    padding-bottom: 1em;
+/* ----- information postal ----- */
+
+.information_postal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

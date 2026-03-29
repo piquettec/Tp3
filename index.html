@@ -62,26 +62,24 @@
                 </div>
             </fieldset>
 
-            <fieldset name="information_postal" class="bordure">
+            <fieldset name="information_postal" class="bordure information_postal">
                 <legend>INFORMATIONS POSTALE</legend>
-                <div>
+                <div class="libele">
                     <label for="adresse" class="titre_libele">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
                     <input name="adresse" id="adresse" type="text" class="champ_texte-postal">
                 </div>
-                <div>
+                <div class="libele">
                     <span class="titre_libele">pays</span>
-                    <select name="pays" id="pays">
+                    <select name="pays" id="pays" class="selection_postal">
                         <option value="">-- Sélectionner --</option>
-
                         <option value="Canada">Canada</option>
                         <option value="États-Unis">États-Unis</option>
                     </select>
                 </div>
-                <div>
+                <div class="libele">
                     <span class="titre_libele">Province ou État</span>
-                    <select name="province_etat" id="province_etat">
+                    <select name="province_etat" id="province_etat" class="selection_postal">
                         <option value="">-- Sélectionner --</option>
-
                         <optgroup label="Canada">
                             <option value="QC">Québec</option>
                             <option value="AB">Alberta</option>
@@ -101,13 +99,13 @@
                         </optgroup>
                     </select>
                 </div>
-                <div>
+                <div class="libele">
                     <label for="code_postal" class="titre_libele">Code postal <span class="exemple__formulaire">(A1A 1A1)</span></label>
                     <input name="code_postal" id="code_postal" type="text" class="champ_texte-postal">
                 </div>
             </fieldset>
 
-            <fieldset name="abonner" class="bordure">            
+            <fieldset name="abonner" class="bordure ">            
                 <input type="checkbox" name="abonner" id="abonner">
                 <label for="abonner">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles</label>
             </fieldset>
