@@ -8,11 +8,11 @@
     </head>
     <body>
         <header>
-            <h2>PUBLICATION GRATUITE</h2>
-            <h1>Commander une <em>brochure</em> gratuite</h1>
+            <h3 class="sous-titre">PUBLICATION GRATUITE</h3>
+            <h1 class="titre">Commander une <em>brochure</em> gratuite</h1>
         </header>
         <form action="URL" method="get" class="formulaire">
-            <fieldset name="format_brochure">
+            <fieldset name="format_brochure" class="bordure">
                 <legend>FORMAT DE LA BROCHURE</legend>
                 <ul class="choix_format">
                     <li class="bouton_radio">
@@ -41,7 +41,7 @@
                 </ul>
             </fieldset>
 
-            <fieldset name="information_contact">
+            <fieldset name="information_contact" class="bordure">
                 <legend>INFORMATION DE CONTACT</legend>
 
                 <div>
@@ -62,14 +62,14 @@
                 </div>
             </fieldset>
 
-            <fieldset name="information_postal">
+            <fieldset name="information_postal" class="bordure">
                 <legend>INFORMATIONS POSTALE</legend>
                 <div>
                     <label for="adresse">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
                     <input name="adresse" id="adresse" type="text">
                 </div>
                 <div>
-                    <legend for="pays">pays</legend>
+                    <span>pays</span>
                     <select name="pays" id="pays">
                         <option value="">-- Sélectionner --</option>
                         <option value="Canada">Canada</option>
@@ -77,8 +77,8 @@
                     </select>
                 </div>
                 <div>
-                    <legend for="province_etat" >Province ou État</legend>
-                    <select name="province_etat" id="Province_État">
+                    <span>Province ou État</span>
+                    <select name="province_etat" id="province_etat">
                         <option value="">-- Sélectionner --</option>
 
                         <optgroup label="Canada">
@@ -106,7 +106,7 @@
                 </div>
             </fieldset>
 
-            <fieldset name="abonner">            
+            <fieldset name="abonner" class="bordure">            
                 <input type="checkbox" name="abonner" id="abonner">
                 <label for="abonner">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles</label>
             </fieldset>

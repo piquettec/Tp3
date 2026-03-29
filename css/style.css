@@ -100,31 +100,18 @@ img {
 }
 
 /* ------- Validations ------- */
-.icone {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('../images/good-warning-error.png');
-    background-size: cover;
-    position: relative;
-    top: 3px;
-}
-.icone--ok {
-    background-position: 0 0;
-}
-.icone--avertissement {
-    background-position: 49px 0;
-}
-.icone--erreur {
-    background-position: 99px 0;
-}
-
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: #F5F1ED;
     font-family: 'DM Sans', sans-serif;
+    padding: 2rem;
+}
+
+.titre {
+    font-family: 'Playfair Display';
 }
 
 .formulaire {
@@ -133,10 +120,11 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 800px;
     width: 100%;
 }
 
+/* ----- bouton radio du format de la brochure -----*/
 .choix_format {
     list-style: none;
     padding: 0;
@@ -157,7 +145,12 @@ body {
     background: #FDFCFA;
     padding: 0.5rem;
     cursor: pointer;
-    padding: 10em;
+    padding: 5em;
+}
+
+.bordure {
+    padding-bottom: 3em;
+    border: none;
 }
 
 .bouton_radio {
@@ -177,15 +170,4 @@ input:checked + label{
     outline: 4px solid #FFF3EE;
 }
 
-.message__erreur{
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: 57px auto;
-    background-position: -38px 0;
-    padding-left: 24px;
-}
-
-.icon__section {
-    background-color: color-mix(in oklab, rgb(236, 78, 236) 50%, rgb(57, 148, 245) 50%);
-}
-
+/* */
