@@ -45,7 +45,7 @@
     /* Couleurs */
     --couleur-primaire: ?;
     --couleur-secondaire: ?;
-    --couleur-tertiaire: ?;
+    --couleur-tertiaire: #C8501A;
 }
 
 /* ------- Styles de base ------- */
@@ -243,3 +243,29 @@ input[type=email],
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.bouton_commander {
+    display: flex;
+    justify-content: end;
+}
+
+.btn_commander {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    background-color: var(--couleur-tertiaire);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn_commander-texte {
+    padding-left: 2em;
+}
+
+.btn_commander-image {
+    width: 100px;
+    height: 44px;
+} 
