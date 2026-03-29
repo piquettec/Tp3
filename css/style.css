@@ -144,7 +144,7 @@ header {
 /* ----- bouton radio du format de la brochure -----*/
 .choix_format {
     list-style: none;
-    padding: 0;
+    padding: 1em 0 0 0;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ header {
     border: none;
 }
 
-.radio_button {
+.radio_choix {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +229,7 @@ input[type=email],
     display: flex;
     flex-direction: column;
     padding-right: 1em;
-    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .titre_libele {
