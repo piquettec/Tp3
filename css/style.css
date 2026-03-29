@@ -6,6 +6,23 @@
 /* Exemple : font-family: 'DM Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
+/* Charte typographique
+   ========================================================================== */
+/**
+ * Typographie responsive (Mobile First)
+   ========================================================================
+ * Les valeurs de taille de police suggérées ici sont à titre indicatif.
+ * À ajuster selon la direction visuelle et le choix de polices de caractères.
+ *
+ * Points de rupture :
+ * ==========================================================================
+ * 640px  (40rem)  - Téléphones en mode paysage (horizontal)
+ * 768px  (48rem)  - Tablettes en mode portrait (vertical)
+ * 1024px (64rem)  - Petits ordinateurs portables, tablette en mode paysage (horizontal)
+ * 1280px (80rem)  - Écrans de portables et écrans de bureau
+ * 1536px (96rem)  - Écrans de bureau - souvent écrans de 24 pouces ou plus
+ */
+
 /**
  * @author Charles Piquette <2535791@csfoy.ca>
  *
@@ -102,22 +119,62 @@ img {
     background-position: 99px 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F1ED;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.choix_format {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .radio_button {
-    display: inline-block;
-    border-radius: 1rem;
-    background: blue;
-    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FDFCFA;
     padding: 0.5rem;
     cursor: pointer;
+    padding: 10em;
+}
+
+.bouton_radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type=radio] + label{
     border: 2px solid white;
+    outline: 4px solid rgb(212, 212, 212);
 }
 
 input:checked + label{
-    border: 2px solid orange;
-    outline: 4px solid rgb(255, 223, 159);
+    border: 2px solid #C8501A;
+    outline: 4px solid #FFF3EE;
 }
 
 .message__erreur{
@@ -132,8 +189,3 @@ input:checked + label{
     background-color: color-mix(in oklab, rgb(236, 78, 236) 50%, rgb(57, 148, 245) 50%);
 }
 
-.body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
