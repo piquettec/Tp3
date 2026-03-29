@@ -43,8 +43,8 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: ?;
-    --couleur-secondaire: ?;
+    --couleur-primaire: white;
+    --couleur-secondaire: #f6f1ed;
     --couleur-tertiaire: #C8501A;
 }
 
@@ -134,7 +134,7 @@ header {
 .formulaire {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--couleur-primaire);
     padding: 2rem;
     border-radius: 20px;
     max-width: 900px;
@@ -186,13 +186,13 @@ header {
 }
 
 input[type=radio] + label{
-    border: 2px solid white;
+    border: 2px solid var(--couleur-primaire);
     outline: 4px solid rgb(212, 212, 212);
 }
 
 input:checked + label{
-    border: 2px solid #C8501A;
-    outline: 4px solid #FFF3EE;
+    border: 2px solid var(--couleur-tertiaire);
+    outline: 4px solid var(--couleur-secondaire);
 }
 
 
@@ -209,7 +209,7 @@ input:checked + label{
     display: block;
     width: 25em;
     height: 2em;
-    background: #f6f1ed;
+    background: var(--couleur-secondaire);
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
 }
@@ -220,7 +220,7 @@ input[type=email],
     display: block;
     width: 51em;
     height: 2em;
-    background: #f6f1ed;
+    background: var(--couleur-secondaire);
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
 }
@@ -255,7 +255,7 @@ input[type=email],
     height: 50px;
     justify-content: end;
     align-items: center;
-    color: white;
+    color: var(--couleur-primaire);
     background-color: var(--couleur-tertiaire);
     border-radius: 10px;
     border: none;
