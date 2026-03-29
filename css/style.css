@@ -110,8 +110,21 @@ body {
     padding: 2rem;
 }
 
+header {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+
 .titre {
     font-family: 'Playfair Display';
+    padding-left: 25vw;
+}
+
+.sous-titre {
+    padding-left: 25%;
 }
 
 .formulaire {
@@ -170,4 +183,39 @@ input:checked + label{
     outline: 4px solid #FFF3EE;
 }
 
-/* */
+/* ----- information de contact ----- */
+
+.champ_texte-contact {
+    display: block;
+    width: 20em;
+    height: 2em;
+    background: #f6f1ed;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+input[type=tel],
+input[type=email],
+.champ_texte-postal {
+    display: block;
+    width: 41em;
+    height: 2em;
+    background: #f6f1ed;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.information_contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titre_libele {
+    margin-bottom: 5px;
+}
+
+.libele {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}

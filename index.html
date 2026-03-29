@@ -41,23 +41,23 @@
                 </ul>
             </fieldset>
 
-            <fieldset name="information_contact" class="bordure">
+            <fieldset name="information_contact" class="bordure information_contact">
                 <legend>INFORMATION DE CONTACT</legend>
 
-                <div>
-                    <label for="prenom">Prénom</label>
-                    <input name="prenom" id="prenom" type="text">
+                <div class="libele">
+                    <label for="prenom" class="titre_libele">Prénom</label>
+                    <input name="prenom" id="prenom" type="text" class="champ_texte-contact">
                 </div>
-                <div>
-                    <label for="nom">Nom</label>
-                    <input name="nom" id="nom" type="text">
+                <div class="libele">
+                    <label for="nom" class="titre_libele">Nom</label>
+                    <input name="nom" id="nom" type="text" class="champ_texte-contact">
                 </div>
-                <div>
-                    <label for="courriel">Courriel <span class="exemple__formulaire">(exemple@domaine.com)</span></label>
+                <div class="libele">
+                    <label for="courriel" class="titre_libele">Courriel <span class="exemple__formulaire">(exemple@domaine.com)</span></label>
                     <input name="courriel" id="courriel" type="email">
                 </div>
-                <div>
-                    <label for="telephone">Téléphone <span class="exemple__formulaire">(438-019-1846)</span></label>
+                <div class="libele">
+                    <label for="telephone" class="titre_libele">Téléphone <span class="exemple__formulaire">(438-019-1846)</span></label>
                     <input name="telephone" id="telephone" type="tel">
                 </div>
             </fieldset>
@@ -65,19 +65,20 @@
             <fieldset name="information_postal" class="bordure">
                 <legend>INFORMATIONS POSTALE</legend>
                 <div>
-                    <label for="adresse">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
-                    <input name="adresse" id="adresse" type="text">
+                    <label for="adresse" class="titre_libele">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
+                    <input name="adresse" id="adresse" type="text" class="champ_texte-postal">
                 </div>
                 <div>
-                    <span>pays</span>
+                    <span class="titre_libele">pays</span>
                     <select name="pays" id="pays">
                         <option value="">-- Sélectionner --</option>
+
                         <option value="Canada">Canada</option>
                         <option value="États-Unis">États-Unis</option>
                     </select>
                 </div>
                 <div>
-                    <span>Province ou État</span>
+                    <span class="titre_libele">Province ou État</span>
                     <select name="province_etat" id="province_etat">
                         <option value="">-- Sélectionner --</option>
 
@@ -101,8 +102,8 @@
                     </select>
                 </div>
                 <div>
-                    <label for="code_postal">Code postal <span class="exemple__formulaire">(A1A 1A1)</span></label>
-                    <input name="code_postal" id="code_postal" type="text">
+                    <label for="code_postal" class="titre_libele">Code postal <span class="exemple__formulaire">(A1A 1A1)</span></label>
+                    <input name="code_postal" id="code_postal" type="text" class="champ_texte-postal">
                 </div>
             </fieldset>
 
