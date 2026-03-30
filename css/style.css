@@ -121,7 +121,6 @@ header {
     background-color: aquamarine;
 }
 
-
 .titre {
     font-family: 'Playfair Display';
     padding-left: 25vw;
@@ -141,7 +140,20 @@ header {
     width: 100%;
 }
 
-/* ----- bouton radio du format de la brochure -----*/
+.titre_section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.icone_section {
+    width: 20px;
+    height: 20px;
+    background-color: var(--couleur-tertiaire);
+}
+
+/* ----- FORMAT BROCHURE -----*/
 .choix_format {
     list-style: none;
     padding: 1em 0 0 0;
@@ -196,7 +208,8 @@ input:checked + label{
 }
 
 
-/* ----- information de contact ----- */
+/* ----- INFORMATION DE CONTACT ----- */
+
 /* stylisation des liste à dérouler */
 .information_contact {
     display: flex;
