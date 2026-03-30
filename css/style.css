@@ -128,6 +128,12 @@ body {
     padding-left: 25vw;
 }
 
+@media (min-width: 64em) {
+    .titre {
+        padding-left: 25vw;
+    }
+}
+
 .sous-titre {
     padding-left: 25%;
 }
@@ -226,9 +232,14 @@ input[type=radio]:checked + label{
     display: block;
     width: 25em;
     height: 2em;
-    background: var(--couleur-secondaire);
+    background: #f6f1ed;
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
+}
+
+.selection_postal:focus {
+    border: 2px solid var(--couleur-tertiaire);
+    outline: 4px solid var(--couleur-secondaire);
 }
 
 .champ_texte-contact:focus {
@@ -242,9 +253,20 @@ input[type=email],
     display: block;
     width: 51em;
     height: 2em;
-    background: var(--couleur-secondaire);
+    background: #f6f1ed;
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
+}
+
+input[type=tel]:focus,
+input[type=email]:focus {
+    border: 2px solid var(--couleur-tertiaire);
+    outline: 4px solid var(--couleur-secondaire);
+}
+
+.champ_texte-postal:focus {
+    border: 2px solid var(--couleur-tertiaire);
+    outline: 4px solid var(--couleur-secondaire);
 }
 
 .libele {
@@ -258,7 +280,7 @@ input[type=email],
     padding-bottom: 5px;
 }
 
-/* ----- information postal ----- */
+/* ----- INFORMATION POSTAL ----- */
 
 .information_postal {
     display: flex;
@@ -266,9 +288,28 @@ input[type=email],
     flex-wrap: wrap;
 }
 
+/* ----- BOUTON S'ABONNER -----*/
+
+.abonner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f1ed;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.abonner_texte {
+    padding-left: 1em;
+}
+
+/* ----- BOUTON COMMANDER -----*/
+
 .bouton_commander {
     display: flex;
     justify-content: end;
+    padding-top: 2em;
 }
 
 .btn_commander {
