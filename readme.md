@@ -49,13 +49,13 @@ Exemple pour le cas d'un seul élément :
 ### CSS (6 points)
 
 - [x] **Mobile first** — Règles pour l'écran étroit écrites en premier ; requêtes média imbriquées pour obtenir tout de suite après dans la CSS les variantes pour l'écran large.
-- [ ] **Styles de base** — Champs de saisie alignés. La variante pour l'écran large doit être enrichie par rapport à la version de l'écran étroit.
+- [x] **Styles de base** — Champs de saisie alignés. La variante pour l'écran large doit être enrichie par rapport à la version de l'écran étroit.
 - [x] **Variables CSS** — Au moins deux variables CSS utilisées pour les couleurs.
-- [ ] **Documentation** — Commentaires dans la CSS et table des matières maintenue en tête de fichier.
+- [x] **Documentation** — Commentaires dans la CSS et table des matières maintenue en tête de fichier.
 - [x] **Interactivité** — Lorsqu'un élément de formulaire reçoit le focus, son apparence doit changer pour le mettre en évidence. Le bouton de soumission et les hyperliens doivent avoir des états survol.
 - [x] **Boutons radio** — Boutons radio visuellement cachés mais accessibles. Ce sont leurs étiquettes qui affichent les états normal, focus, hover et checked.
 
-#### Ma note d'autoévaluation pour le critère CSS : Z
+#### Ma note d'autoévaluation pour le critère CSS : B
 
 ### Accessibilité (4 points)
 
@@ -63,6 +63,12 @@ Exemple pour le cas d'un seul élément :
 - [x] **Lien « Allez au contenu »** — Lien tout de suite après l'ouverture du `body`, permettant d'aller directement au contenu principal. Classes `screen-reader-only` et `focusable`.
 - [x] **Régions (landmarks)** — Utiliser les éléments HTML appropriés (`header`, `main`, `footer`) ou, si ce n'est pas possible, leur attribuer les rôles ARIA correspondants (`banner`, `main`, `contentinfo`).
 - [x] **Contraste des couleurs** — Changez les couleurs de bases fournies dans la maquettes pour des couleurs personnalisées et ajoutez, en commentaire de la feuille de styles, le niveau de contraste entre les couleurs utilisées et les tests réussis avec l'outil [TPGi Color Contrast Checker](https://www.tpgi.com/color-contrast-checker/).
+
+--couleur-primaire: white;
+
+--couleur-secondaire: #a9dfff; est conforme au contraste minimum AA car les textes est un noir, ainsi qu'au AAA et est conforme pour les contenus non textuels
+
+--couleur-tertiaire: #00501A; est conforme au contraste minimum AA car les images sont en blanc, ainsi qu'au AAA et est conforme pour les contenus non textuels
 
 #### Ma note d'autoévaluation pour le critère Accessibilité : B
 
@@ -76,10 +82,12 @@ Exemple pour le cas d'un seul élément :
 ---
 
 **TOTAL**
-X sur 15
+10 sur 15
 
 ---
 
 ## Ajoutez vos commentaires sur le projet. Comment ça s'est passé? Quels aspects avez-vous trouvé facile ou difficile?
+
+Ce que j'ai trouver difficile était de mettre les champs de texte côte à côte  en les gardant à une distance ainsi que les images des sections j'ai eu beaucoup de difficulté à les faires.
 
 ## Ma note d'autoévaluation pour le projet entier : C
