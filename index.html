@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <a href="#formulaire" class="visually-hidden">Aller au contenu</a>
         <header>
             <h3 class="sous-titre">PUBLICATION GRATUITE</h3>
             <h1 class="titre">Commander une <em>brochure</em> gratuite</h1>
         </header>
-        <form action="URL" method="get" class="formulaire">
+        <form action="URL" method="get" class="formulaire" id="formulaire">
             <fieldset name="format_brochure" class="bordure">
                 <legend class="titre_section">
                     <img src="images/icon-format-brochure.svg" alt="" class="icone_section" aria-hidden="true">
@@ -54,18 +55,22 @@
                 <div class="libele">
                     <label for="prenom" class="titre_libele">Prénom</label>
                     <input name="prenom" id="prenom" type="text" class="champ_texte-contact" required>
+                    <p class="champ__erreur erreur" id="erreurPrenom"></p>
                 </div>
                 <div class="libele">
                     <label for="nom" class="titre_libele">Nom</label>
                     <input name="nom" id="nom" type="text" class="champ_texte-contact" required>
+                    <p class="champ__erreur erreur" id="erreurNom"></p>
                 </div>
                 <div class="libele">
                     <label for="courriel" class="titre_libele">Courriel <span class="exemple__formulaire">(exemple@domaine.com)</span></label>
                     <input name="courriel" id="courriel" type="email" required>
+                    <p class="champ__erreur erreur" id="erreurCourriel"></p>
                 </div>
                 <div class="libele">
                     <label for="telephone" class="titre_libele">Téléphone <span class="exemple__formulaire">(438-019-1846)</span></label>
                     <input name="telephone" id="telephone" type="tel" required>
+                    <p class="champ__erreur erreur" id="erreurTelephone"></p>
                 </div>
             </fieldset>
 
@@ -78,6 +83,7 @@
                 <div class="libele">
                     <label for="adresse" class="titre_libele">Adresse <span class="exemple__formulaire">(123, rue principal)</span></label>
                     <input name="adresse" id="adresse" type="text" class="champ_texte-postal">
+                    <p class="champ__erreur erreur" id="erreurAdresse"></p>
                 </div>
                 <div class="libele">
                     <span class="titre_libele">pays</span>
@@ -113,6 +119,7 @@
                 <div class="libele">
                     <label for="code_postal" class="titre_libele">Code postal <span class="exemple__formulaire">(A1A 1A1)</span></label>
                     <input name="code_postal" id="code_postal" type="text" class="champ_texte-postal">
+                    <p class="champ__erreur erreur" id="erreurPostal"></p>
                 </div>
             </fieldset>
 
