@@ -44,8 +44,8 @@
 :root {
     /* Couleurs */
     --couleur-primaire: white;
-    --couleur-secondaire: #f6f1ed;
-    --couleur-tertiaire: #C8501A;
+    --couleur-secondaire: #a9dfff;
+    --couleur-tertiaire: #00501A;
 }
 
 /* ------- Styles de base ------- */
@@ -104,21 +104,23 @@ img {
 }
 
 /* ------- Validations ------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 17em;
+    background-color: var(--couleur-secondaire);
+    padding-bottom: 3em;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background: #F5F1ED;
     font-family: 'DM Sans', sans-serif;
-    padding: 2rem;
-}
-
-header {
-    display: block;
-    width: 100%;
-    padding: 0;
-    background-color: aquamarine;
 }
 
 .titre {
@@ -133,11 +135,13 @@ header {
 .formulaire {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     background: var(--couleur-primaire);
     padding: 2rem;
     border-radius: 20px;
     max-width: 900px;
     width: 100%;
+    margin-top: -50px;
 }
 
 .titre_section {
@@ -202,7 +206,7 @@ input[type=radio] + label{
     outline: 4px solid rgb(212, 212, 212);
 }
 
-input:checked + label{
+input[type=radio]:checked + label{
     border: 2px solid var(--couleur-tertiaire);
     outline: 4px solid var(--couleur-secondaire);
 }
@@ -225,6 +229,11 @@ input:checked + label{
     background: var(--couleur-secondaire);
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
+}
+
+.champ_texte-contact:focus {
+    border: 2px solid var(--couleur-tertiaire);
+    outline: 4px solid var(--couleur-secondaire);
 }
 
 input[type=tel],

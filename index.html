@@ -14,15 +14,15 @@
         <form action="URL" method="get" class="formulaire">
             <fieldset name="format_brochure" class="bordure">
                 <legend class="titre_section">
-                    <img src="images/icon-format-brochure.svg" alt="" class="icone_section">
+                    <img src="images/icon-format-brochure.svg" alt="" class="icone_section" aria-hidden="true">
                     FORMAT DE LA BROCHURE
                 </legend>
 
                 <ul class="choix_format">
                     <li class="bouton_radio">
-                        <input class="screen-reader-only" type="radio" name="choix_format" id="choix_imprime" >
+                        <input class="screen-reader-only" type="radio" name="choix_format" id="choix_imprime" required>
                         <label class="radio_choix" for="choix_imprime">
-                            <img class="image_radio" src="images/icon-file-print.svg" alt="">
+                            <img class="image_radio" src="images/icon-file-print.svg" alt="" aria-hidden="true">
                             <span class="libele__imprime">Imprimé</span>
                         </label>
                     </li>
@@ -30,7 +30,7 @@
                     <li class="bouton_radio">
                         <input class="screen-reader-only" type="radio" name="choix_format" id="choix_PDF" >
                         <label class="radio_choix" for="choix_PDF">
-                            <img class="image_radio" src="images/icon-file-pdf.svg" alt="">
+                            <img class="image_radio" src="images/icon-file-pdf.svg" alt="" aria-hidden="true">
                             <span class="libele__imprime">PDF</span>
                         </label>
                     </li>
@@ -38,7 +38,7 @@
                     <li class="bouton_radio">
                         <input class="screen-reader-only" type="radio" name="choix_format" id="choix_ePub" >
                         <label class="radio_choix" for="choix_ePub">
-                            <img class="image_radio" src="images/icon-file-epub.svg" alt="">
+                            <img class="image_radio" src="images/icon-file-epub.svg" alt="" aria-hidden="true">
                             <span class="libele__imprime">ePub</span>
                         </label>
                     </li>
@@ -47,31 +47,31 @@
 
             <fieldset name="information_contact" class="bordure information_contact">
                 <legend class="titre_section">
-                    <img src="images/icon-contact.svg" alt="" class="icone_section">
+                    <img src="images/icon-contact.svg" alt="" class="icone_section" aria-hidden="true">
                     INFORMATION DE CONTACT
                 </legend>
 
                 <div class="libele">
                     <label for="prenom" class="titre_libele">Prénom</label>
-                    <input name="prenom" id="prenom" type="text" class="champ_texte-contact">
+                    <input name="prenom" id="prenom" type="text" class="champ_texte-contact" required>
                 </div>
                 <div class="libele">
                     <label for="nom" class="titre_libele">Nom</label>
-                    <input name="nom" id="nom" type="text" class="champ_texte-contact">
+                    <input name="nom" id="nom" type="text" class="champ_texte-contact" required>
                 </div>
                 <div class="libele">
                     <label for="courriel" class="titre_libele">Courriel <span class="exemple__formulaire">(exemple@domaine.com)</span></label>
-                    <input name="courriel" id="courriel" type="email">
+                    <input name="courriel" id="courriel" type="email" required>
                 </div>
                 <div class="libele">
                     <label for="telephone" class="titre_libele">Téléphone <span class="exemple__formulaire">(438-019-1846)</span></label>
-                    <input name="telephone" id="telephone" type="tel">
+                    <input name="telephone" id="telephone" type="tel" required>
                 </div>
             </fieldset>
 
             <fieldset name="information_postal" class="bordure information_postal">
                 <legend class="titre_section">
-                    <img src="images/icon-postal.svg" alt="" class="icone_section">
+                    <img src="images/icon-postal.svg" alt="" class="icone_section" aria-hidden="true">
                     INFORMATIONS POSTALE
                 </legend>
                 
@@ -124,7 +124,7 @@
             <div class="bouton_commander">
                 <button name="btnCommander" value="Commander" class="btn_commander">
                     <span class="btn_commander-texte">Commander</span>
-                    <img class="btn_commander-image" src="images/icon-arrow.svg" alt="Commander">
+                    <img class="btn_commander-image" src="images/icon-arrow.svg" alt="" aria-hidden="true">
                 </button>
             </div>
         </form>
