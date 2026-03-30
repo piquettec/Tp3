@@ -33,6 +33,13 @@
  * Styles de base
  * Accessibilité
  * Validations
+ * Header
+ * Formulaire
+ * Format brochure
+ * Information de contact
+ * Information Postal
+ * Bouton s'abonner
+ * Bouton commander
  *
  */
 
@@ -105,6 +112,8 @@ img {
 
 /* ------- Validations ------- */
 
+/* ------- Header ------- */
+
 header {
     display: flex;
     flex-direction: column;
@@ -142,6 +151,7 @@ body {
     }
 }
 
+/* ------- Formulaire ------- */
 
 .formulaire {
     display: flex;
@@ -183,6 +193,15 @@ body {
     border: none;
 }
 
+.bouton_radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    width: 100%;
+}
+
 .radio_choix {
     display: inline-flex;
     flex-direction: column;
@@ -194,14 +213,6 @@ body {
     width: 100%;
     height: 100%;
     padding: 2rem 1rem;
-}
-
-.bouton_radio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex: auto;
 }
 
 .image_radio {
@@ -295,6 +306,14 @@ input[type=email]:focus {
     padding-bottom: 5px;
 }
 
+/* ----- INFORMATION POSTAL ----- */
+
+.information_postal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media (min-width: 64rem) {
     .information_contact {
         display: flex;
@@ -307,22 +326,17 @@ input[type=email]:focus {
     .champ_texte-postal {
         width: 51em;
     }
+
     .champ_texte-contact,
     .selection_postal {
         width: 25em;
     }
 
     .information_postal {
+        display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-}
-
-/* ----- INFORMATION POSTAL ----- */
-
-.information_postal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 /* ----- BOUTON S'ABONNER -----*/
@@ -361,13 +375,6 @@ input[type=email]:focus {
     border: none;
 }
 
-@media (min-width: 64rem) {
-    .btn_commander {
-        width: 200px;
-        justify-content: flex-end;
-    }
-}
-
 .btn_commander-texte {
     padding-left: 2em;
 }
@@ -376,3 +383,10 @@ input[type=email]:focus {
     width: 100px;
     height: 44px;
 } 
+
+@media (min-width: 64rem) {
+    .btn_commander {
+        width: 200px;
+        justify-content: flex-end;
+    }
+}
